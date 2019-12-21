@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    Links<br>
+    <a href="{{url_for('create_form')}}">Добавить новую форму</a><br>
+    {% for row in form %}
+        <a href="{{url_for('change_form', id_form=row.primary_key)}}">ID формы {{ row.primary_key }}</a><br>
+    {% endfor %}
+{% endblock %}
