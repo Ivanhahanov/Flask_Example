@@ -34,10 +34,8 @@ def change_form(id_form):
 
     if request.method == 'POST' and form.validate():
         print(form)
-        example = Example()
-        example.int_row = form.int_row.data
-        example.str_row = form.str_row.data
-        db.session.add(example)
+        table.int_row = form.int_row.data
+        table.str_row = form.str_row.data
         db.session.commit() # сохранение изменений
 
     return render_template('forms.html', form=form)

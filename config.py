@@ -8,7 +8,7 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'this-really-needs-to-be-changed'
-    SQLALCHEMY_DATABASE_URI = "postgresql://login:password@localhost/database_name" # TODO: enter your data into
+    SQLALCHEMY_DATABASE_URI = "postgresql://admin:explabs@localhost/db_name" # TODO: enter your data into
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
